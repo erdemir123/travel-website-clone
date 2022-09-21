@@ -1,7 +1,7 @@
 const header = document.querySelector("header")
 window.addEventListener("scroll",()=>{
     
-    if(window.scrollY>100){
+    if(window.scrollY>0){
         header.classList.add("active")
     }
     else{
@@ -36,6 +36,7 @@ const search5 = document.querySelector("#search5")
 const input = document.querySelector("#input")
 
 search5.addEventListener("click",()=>{
-    let url =  'https://www.google.com/search?q=' +input.value
+    let url =  'https://www.google.com/search?q='+ input.value
     window.open(url)
+    confirm("dene")
 })
