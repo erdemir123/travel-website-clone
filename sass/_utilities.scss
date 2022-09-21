@@ -1,0 +1,20 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 0.2rem solid #10221b;
+    color: #10221b;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    transition: 0.5s;
+  }
+  
+  .btn:hover {
+    background: #10221b;
+    color: #fff;
+  }

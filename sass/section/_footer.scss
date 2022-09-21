@@ -1,0 +1,61 @@
+.footer {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    .box-container {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 1.5rem;
+        margin: 0 auto;
+        .box{
+            @include sm{
+                margin-top: 5rem;
+                margin-left: 50%;
+                transform: translate(-50%);
+            }
+        }
+        
+
+        .box h3 {
+            font-size: 2rem;
+            padding: 1.5rem 0;
+            color: #fff;
+          }
+          .box a {
+            display: block;
+            font-size: 1.4rem;
+            color: #fff;
+            padding: 1rem 0;
+            
+            
+          }
+          .box a i {
+            color: #219150;
+            padding-right: .5rem;
+            transition: .4s;
+          }
+          .box a:hover {
+            color: #219150;
+            
+          }
+          .box a:hover i {
+            padding-right: 2rem;
+          }
+      }
+      .credit {
+        text-align: center;
+        margin-top: 2.5rem;
+        padding: 1rem;
+        padding-top: 2.5rem;
+        font-size: 2rem;
+        color: #fff;
+        span {
+            color: #219150;
+          }
+      }
+  }
