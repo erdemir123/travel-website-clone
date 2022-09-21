@@ -30,4 +30,12 @@ nav_close.addEventListener("click",()=>{
     navbar.classList.remove("active")
 })
 
+///google search input
 
+const search5 = document.querySelector("#search5")
+const input = document.querySelector("#input")
+
+search5.addEventListener("click",()=>{
+    let url =  'https://www.google.com/search?q=' +input.value
+    window.open(url)
+})
