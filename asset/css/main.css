@@ -215,6 +215,53 @@ header .icons #menu-btn {
   color: rgb(42, 128, 16);
 }
 
+section {
+  padding: 0;
+  margin: 0;
+}
+
+.home {
+  padding: 0;
+}
+
+.box-home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover !important;
+  background-position: center !important;
+  justify-content: flex-end;
+  padding: 2rem 9%;
+}
+.box-home.second {
+  justify-content: flex-start;
+}
+.box-home .content {
+  width: 50rem;
+}
+.box-home .content span {
+  font-size: 4rem;
+  color: rgba(14, 13, 13, 0.877);
+}
+.box-home .content h3 {
+  font-size: 6rem;
+  color: rgb(42, 128, 16);
+  padding-top: 0.5rem;
+  text-transform: uppercase;
+}
+.box-home .content p {
+  line-height: 2;
+  color: rgba(14, 13, 13, 0.877);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3rem;
+  color: rgba(14, 13, 13, 0.877);
+}
+
 .footer {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;

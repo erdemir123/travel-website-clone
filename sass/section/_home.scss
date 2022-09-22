@@ -1,0 +1,46 @@
+section{
+    padding: 0 ;
+    margin: 0;
+}
+.home{
+    padding: 0;
+
+}
+.box-home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content: flex-end;
+    padding: 2rem 9%;
+    &.second{
+        justify-content: flex-start;
+    }
+    .content{
+        width: 50rem;
+        span{
+        font-size: 4rem;
+        color:$black;
+        }
+        h3{
+          font-size: 6rem;
+          color: $green;
+          padding-top: .5rem;
+          text-transform: uppercase;  
+        }
+        p{
+            line-height: 2;
+            color: $black;
+            font-size: 1.5rem;
+            padding: 1rem 0;
+        }
+    }
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 3rem;
+    color:$black;
+}
