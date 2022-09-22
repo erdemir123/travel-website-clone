@@ -14,7 +14,7 @@ header{
     height: 7rem;
     font-size: 2rem;
     .fa-hiking{
-        color: $grey;
+        color: $green;
     }
     a{
         color: $black;
@@ -61,7 +61,7 @@ header{
                     right: 2rem;
                     font-size: 3rem;
                     &:hover{
-                        color: $grey;
+                        color: $green;
 
                     }
                 }
@@ -114,7 +114,7 @@ header{
             right: 10rem;
             transition: .8s;
             &:hover{
-                color: $grey;
+                color: $green;
             }
         }
     }

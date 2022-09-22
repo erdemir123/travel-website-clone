@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+}
+.shop {
+    text-align: center;
+    
+}
+
+.swiper {
+    width: 86vw ;
+}
+
+.shopping-section {
+   display: flex;
+   margin-top: 3rem;
+   width: 20vw;
+}
+
+
+.allpart {
+    border: 0.2rem solid #10221b;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.imgpart {
+    width: 20vw;    
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.imgicon {
+   
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    bottom: -4rem;
+    transition: 2s;
+}
+.imgicon i {
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 3rem;
+    font-size: 1.7rem;
+    background: #10221b;
+    color: #fff;
+    margin: 5px;
+  
+   
+}
+.imgicon i:hover {
+    background: #219150;
+}
+
+img {
+ width: 100%;
+ height: 100%;
+}
+
+.imgpart:hover .imgicon {
+transform: translateY(-4.5rem);
+ display: block;
+}
+
+.textpart {
+height: 15vh;
+display: flex;
+flex-direction: column;
+gap: 0.3rem;
+align-items: center;
+margin-top: 0.5rem;
+
+}
+
+h3 {
+    font-size: 2rem;
+    color: #10221b;
+}
+
+span {
+    font-size: 1.5rem;
+    color: #219150;
+}
+.staricon {
+    
+    font-size: 12px;
+}
+
+
+
+
