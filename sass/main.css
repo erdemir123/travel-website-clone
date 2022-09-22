@@ -79,7 +79,7 @@ header {
   transition: 0.6s;
 }
 header.active {
-  background-color: #ffff;
+  background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 header .container {
@@ -92,7 +92,7 @@ header .container {
   font-size: 2rem;
 }
 header .container .fa-hiking {
-  color: #2a8010;
+  color: rgb(42, 128, 16);
 }
 header .container a {
   color: rgba(14, 13, 13, 0.877);
@@ -113,7 +113,7 @@ header .container .navbar .navbar-nav {
     top: 0;
     left: -1000px;
     height: 100vh;
-    background-color: #ffff;
+    background-color: white;
     width: 50%;
     z-index: 5169854198;
     display: flex;
@@ -151,7 +151,7 @@ header .container .navbar .navbar-nav #nav-close {
     font-size: 3rem;
   }
   header .container .navbar .navbar-nav #nav-close:hover {
-    color: #2a8010;
+    color: rgb(42, 128, 16);
   }
 }
 header .icons {
@@ -172,11 +172,13 @@ header .icons #menu-btn {
 }
 
 .search {
-  clip-path: inset(0 0 100% 0);
+  -webkit-clip-path: inset(0 0 100% 0);
+          clip-path: inset(0 0 100% 0);
   transition: 0.6s;
 }
 .search.active {
-  clip-path: inset(0 0 0 0);
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
   position: fixed;
   top: 0;
   left: 0;
@@ -195,24 +197,24 @@ header .icons #menu-btn {
   width: 60%;
   height: 4rem;
   background-color: rgba(32, 32, 32, 0.158);
-  border-bottom: 3px solid #ffff;
-  color: #ffff;
+  border-bottom: 3px solid white;
+  color: white;
   font-size: 2rem;
 }
 .search.active .fa-search {
   font-size: 3rem;
-  color: #ffff;
+  color: white;
 }
 .search.active #search-close {
   position: absolute;
-  color: #ffff;
+  color: white;
   font-size: 4rem;
   top: 5rem;
   right: 10rem;
   transition: 0.8s;
 }
 .search.active #search-close:hover {
-  color: #2a8010;
+  color: rgb(42, 128, 16);
 }
 
 .category .heading {
@@ -238,7 +240,7 @@ header .icons #menu-btn {
 }
 .category .box-container .box h3 {
   font-size: 2rem;
-  color: #2a8010;
+  color: rgb(42, 128, 16);
 }
 .category .box-container .box p {
   font-size: 1.5rem;
@@ -267,7 +269,7 @@ header .icons #menu-btn {
 }
 .about .content h3 {
   font-size: 3rem;
-  color: #2a8010;
+  color: rgb(42, 128, 16);
 }
 .about .content p {
   font-size: 1.5rem;
@@ -277,7 +279,6 @@ header .icons #menu-btn {
 }
 
 .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -330,6 +331,4 @@ header .icons #menu-btn {
 }
 .footer .credit span {
   color: #219150;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

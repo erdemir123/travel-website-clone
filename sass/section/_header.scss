@@ -1,121 +1,118 @@
-header{
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  transition: 0.6s;
+  &.active {
+    background-color: $white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .container {
+    @include flex(space-between, center, row, no-wrap);
+    height: 7rem;
+    font-size: 2rem;
+    .fa-hiking {
+      color: $green;
+    }
+    a {
+      color: $black;
+    }
+    .navbar {
+      @include flex(center, center, row, no-wrap);
+      .navbar-nav {
+        transition: 0.8s;
+        @include md {
+          position: absolute;
+          top: 0;
+          left: -1000px;
+          height: 100vh;
+          background-color: $white;
+          width: 50%;
+          z-index: 5169854198;
+          @include flex(center, center, column, no-wrap);
+          gap: 5rem;
+          a {
+            display: block;
+            font-size: 2rem;
+          }
+          #nav-close {
+            display: block;
+          }
+          &.active {
+            left: 0;
+          }
+        }
+        a {
+          text-transform: capitalize;
+          padding-right: 20px;
+          color: $black;
+        }
+        #nav-close {
+          display: none;
+          @include md {
+            display: block;
+            position: absolute;
+            top: 4rem;
+            right: 2rem;
+            font-size: 3rem;
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+  .icons {
+    @include flex(center, center, row, no-wrap);
+    gap: 1.5rem;
+    #menu-btn {
+      display: none;
+      @include md {
+        display: inline-block;
+      }
+    }
+  }
+}
+.search {
+  clip-path: inset(0 0 100% 0);
+  transition: 0.6s;
+  &.active {
+    clip-path: inset(0 0 0 0);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-    width: 100%;
-    transition: .6s;
-    &.active{
-        background-color: $white;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 100vw;
+    height: 100vh;
+    background-color: $black;
+    @include flex(center, center, row, no-wrap);
+    gap: 2rem;
+    z-index: 123456789;
+    input {
+      width: 60%;
+      height: 4rem;
+      background-color: rgba(32, 32, 32, 0.158);
+      border-bottom: 3px solid $white;
+      color: $white;
+      font-size: 2rem;
     }
-   .container{
-    @include flex(space-between,center,row,no-wrap);
-    height: 7rem;
-    font-size: 2rem;
-    .fa-hiking{
-        color: $grey;
+    .fa-search {
+      font-size: 3rem;
+      color: $white;
     }
-    a{
-        color: $black;
+    #search-close {
+      position: absolute;
+      color: $white;
+      font-size: 4rem;
+      top: 5rem;
+      right: 10rem;
+      transition: 0.8s;
+      &:hover {
+        color: $green;
+      }
     }
-    .navbar{
-
-        @include flex(center,center,row,no-wrap);
-        .navbar-nav{
-            transition: .8s;
-            @include md{
-                position: absolute;
-                top: 0;
-                left: -1000px;
-                height: 100vh;
-                background-color: $white;
-                width: 50%;
-                z-index: 5169854198;
-                @include flex(center,center,column,no-wrap);
-                gap:5rem;
-                a{
-                    display: block;
-                    font-size: 2rem;
-                }
-                #nav-close{
-                    display: block;
-                    
-                }
-                &.active{
-                left: 0;
-                
-            }
-                }
-            a{
-                text-transform: capitalize;
-                padding-right: 20px;
-                color: $black;
-            }
-            #nav-close{
-                display: none;
-                @include md{
-                    display: block;
-                    position: absolute;
-                    top: 4rem;
-                    right: 2rem;
-                    font-size: 3rem;
-                    &:hover{
-                        color: $grey;
-
-                    }
-                }
-            }
-        }
-    }
-   }
-   .icons{
-    @include flex(center,center,row,no-wrap);
-    gap: 1.5rem;
-    #menu-btn{
-        display: none;
-        @include md{
-            display:inline-block;
-        }
-    }
-   }
-}
-.search{
-    clip-path: inset(0 0 100% 0);
-    transition: .6s;
-    &.active{
-        clip-path: inset(0 0 0 0);
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: $black;
-        @include flex(center,center,row,no-wrap);
-        gap:2rem;
-        z-index: 123456789;
-        input{
-            width: 60%;
-            height: 4rem;
-            background-color: rgba(32, 32, 32, 0.158);
-            border-bottom: 3px solid $white;
-            color: $white;
-            font-size: 2rem;
-        }
-        .fa-search{
-            font-size: 3rem;
-            color: $white;
-        }
-        #search-close{
-            position: absolute;
-            color: $white;
-            font-size: 4rem;
-            top: 5rem;
-            right: 10rem;
-            transition: .8s;
-            &:hover{
-                color: $grey;
-            }
-        }
-    }
+  }
 }
