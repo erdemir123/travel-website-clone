@@ -1,7 +1,8 @@
+
 var swiper = new Swiper(".shop", {
     loop:true, 
     grabCursor:true,
-    spaceBetween: 20,
+    spaceBetween: 25,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
