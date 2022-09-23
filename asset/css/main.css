@@ -223,32 +223,32 @@ h1 {
 .shop {
   text-align: center;
 }
-.shop .swiper {
+.shop .shopping-section {
   width: 86vw;
   display: flex;
   margin-top: 3rem;
 }
-.shop .swiper .allpart {
+.shop .shopping-section .allpart {
   border: 0.2rem solid #10221b;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.shop .swiper .allpart .imgpart {
+.shop .shopping-section .allpart .imgpart {
   width: 100%;
   height: 25rem;
   position: relative;
   overflow: hidden;
 }
-.shop .swiper .allpart .imgpart:hover .imgicon {
+.shop .shopping-section .allpart .imgpart:hover .imgicon {
   transform: translateY(-4.5rem);
   display: block;
 }
-.shop .swiper .allpart .imgpart img {
+.shop .shopping-section .allpart .imgpart img {
   width: 100%;
   height: 100%;
 }
-.shop .swiper .allpart .imgpart .imgicon {
+.shop .shopping-section .allpart .imgpart .imgicon {
   position: absolute;
   z-index: 10;
   width: 100%;
@@ -256,7 +256,7 @@ h1 {
   bottom: -4rem;
   transition: 2s;
 }
-.shop .swiper .allpart .imgpart .imgicon .imgicon a {
+.shop .shopping-section .allpart .imgpart .imgicon a {
   height: 2.5rem;
   width: 2.5rem;
   line-height: 3rem;
@@ -266,10 +266,10 @@ h1 {
   margin: 5px;
   text-decoration: none;
 }
-.shop .swiper .allpart .imgpart .imgicon .imgicon a:hover {
+.shop .shopping-section .allpart .imgpart .imgicon a:hover {
   background: #219150;
 }
-.shop .swiper .allpart .textpart {
+.shop .shopping-section .allpart .textpart {
   height: 15vh;
   display: flex;
   flex-direction: column;
@@ -277,15 +277,15 @@ h1 {
   align-items: center;
   margin-top: 0.5rem;
 }
-.shop .swiper .allpart .textpart h4 {
+.shop .shopping-section .allpart .textpart h4 {
   font-size: 2rem;
   color: #10221b;
 }
-.shop .swiper .allpart .textpart span {
+.shop .shopping-section .allpart .textpart span {
   font-size: 1.5rem;
   color: #219150;
 }
-.shop .swiper .allpart .textpart .staricon {
+.shop .shopping-section .allpart .textpart .staricon {
   font-size: 12px;
 }
 

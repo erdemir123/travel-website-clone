@@ -4,7 +4,7 @@ h1 {
 }
 .shop {
     text-align: center;
-    .swiper {
+    .shopping-section {
         width: 86vw ;
         display: flex;
         margin-top: 3rem;
@@ -33,7 +33,7 @@ h1 {
                     text-align: center;
                     bottom: -4rem;
                     transition: 2s;
-                    .imgicon a {
+                    a {
                         height: 2.5rem;
                         width: 2.5rem;
                         line-height: 3rem;
