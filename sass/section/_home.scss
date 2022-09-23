@@ -14,20 +14,41 @@ section{
     background-position: center !important;
     justify-content: flex-end;
     padding: 2rem 9%;
+
+    @include lg{
+        justify-content: center;
+        background-position: right !important;
+        padding:2rem ;
+
+    }
     &.second{
         justify-content: flex-start;
+        @include lg{
+            justify-content: center;
+            background-position: left !important;
+
+        }
     }
     .content{
         width: 50rem;
+        @include lg{
+            text-align: center;
+        }
         span{
         font-size: 4rem;
         color:$black;
+        @include lg{
+            font-size: 3rem;
+        }
         }
         h3{
           font-size: 6rem;
           color: $green;
           padding-top: .5rem;
           text-transform: uppercase;  
+          @include lg{
+            font-size: 4rem;
+        }
         }
         p{
             line-height: 2;
@@ -43,4 +64,7 @@ section{
 .swiper-button-prev::after{
     font-size: 3rem;
     color:$black;
+    @include lg{
+        display:none ;
+    }
 }
