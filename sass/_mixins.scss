@@ -1,12 +1,17 @@
-@mixin img(){
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: cover;
+@mixin img() {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-@mixin flex($justify:center,$aling:center,$row:row,$wrap:no-wrap){
-    display: flex;
-    align-items: $aling;
-    justify-content: $justify;
-    flex-direction: $row;
-    flex-wrap: $wrap;
+@mixin flex($justify: center, $aling: center, $row: row, $wrap: no-wrap) {
+  display: flex;
+  align-items: $aling;
+  justify-content: $justify;
+  flex-direction: $row;
+  flex-wrap: $wrap;
+}
+@mixin grid($min) {
+  display: grid;
+  grid-template-columns: (repeat(auto-fit, minmax($min, 1fr)));
+  gap: 1.5rem;
 }
