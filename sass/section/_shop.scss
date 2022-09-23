@@ -1,11 +1,13 @@
 h1 {
     text-align: center;
     margin-top: 2rem;
+    font-size: 2.5rem;
 }
 .shop {
     text-align: center;
-    .swiper {
-        width: 86vw ;
+    width: 86vw;
+    .shopping-section {
+        width: 50vw ;
         display: flex;
         margin-top: 3rem;
         .allpart {
@@ -33,7 +35,7 @@ h1 {
                     text-align: center;
                     bottom: -4rem;
                     transition: 2s;
-                    .imgicon a {
+                    a {
                         height: 2.5rem;
                         width: 2.5rem;
                         line-height: 3rem;

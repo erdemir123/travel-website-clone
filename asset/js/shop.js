@@ -1,4 +1,3 @@
-
 var swiper = new Swiper(".shop", {
     loop:true, 
     grabCursor:true,
