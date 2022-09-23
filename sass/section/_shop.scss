@@ -1,100 +1,80 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 h1 {
     text-align: center;
     margin-top: 2rem;
 }
 .shop {
-    text-align: center; 
-    }
+    text-align: center;
     .swiper {
         width: 86vw ;
         display: flex;
         margin-top: 3rem;
-        width: 20vw;
-        }
         .allpart {
             border: 0.2rem solid #10221b;
             display: flex;
             flex-direction: column;
             text-align: center;
-            }
             .imgpart {
-                width: 20vw;    
-                height: 40vh;
+                width: 100%;    
+                height: 25rem;
                 position: relative;
                 overflow: hidden;
+                &:hover .imgicon {
+                    transform: translateY(-4.5rem);
+                     display: block;
+                    }
+                img {
+                    width: 100%;
+                    height: 100%;
                 }
                 .imgicon {
-   
                     position: absolute;
                     z-index: 10;
                     width: 100%;
                     text-align: center;
                     bottom: -4rem;
                     transition: 2s;
-                    }
-                    .imgicon i {
+                    .imgicon a {
                         height: 2.5rem;
                         width: 2.5rem;
                         line-height: 3rem;
                         font-size: 1.7rem;
                         background: #10221b;
                         color: #fff;
-                        margin: 5px; 
-                        .imgicon i:hover {
-                           background: #219150;
-                            } 
+                        margin: 5px;
+                        text-decoration: none;
+                        &:hover {
+                            background: #219150;
                         }
-                img {
-                     width: 100%;
-                    height: 100%;
-                    }
-                .imgpart:hover .imgicon {
-                    transform: translateY(-4.5rem);
-                    display: block;
-                    }    
+                    }   
+                }   
+            
+            }
             .textpart {
                 height: 15vh;
                 display: flex;
                 flex-direction: column;
                 gap: 0.3rem;
                 align-items: center;
-                background-color: rgb(219, 215, 215);
-                }
+                margin-top: 0.5rem;
                 h4 {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                     color: #10221b;
-                    margin-top: 1rem;
-                    }
+                }
+                
                 span {
                     font-size: 1.5rem;
                     color: #219150;
                 }
                 .staricon {
+                    
                     font-size: 12px;
-                }        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                }
+                
+            }
+        }
+        
+    }
+}
 
 
 
