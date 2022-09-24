@@ -557,6 +557,95 @@ h1 {
   font-size: 12px;
 }
 
+.newsletter {
+  width: 100%;
+  height: 35rem;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+}
+.newsletter .content {
+  width: 70%;
+  max-width: 100rem;
+  min-width: 44rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter .content h1 {
+  font-size: 4rem;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.newsletter .content p {
+  width: 100%;
+  max-width: 70rem;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1.5rem;
+  line-height: 2.6rem;
+}
+.newsletter .content form {
+  width: 100%;
+  max-width: 70rem;
+  display: flex;
+  position: relative;
+  margin-bottom: 4rem;
+}
+.newsletter .content form .email {
+  width: 100%;
+  min-width: max-content;
+  height: 7rem;
+  border: 3px solid black;
+  border-radius: 50px;
+  font-size: 1.8rem;
+  text-indent: 18px;
+  text-transform: none;
+}
+.newsletter .content form .btn {
+  width: 18%;
+  min-width: max-content;
+  height: 5rem;
+  font-size: 1.8rem;
+  background-color: rgba(14, 13, 13, 0.877);
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  right: 1rem;
+  bottom: 1rem;
+  position: absolute;
+}
+.newsletter .content form .btn:hover {
+  background-color: white;
+  color: rgba(14, 13, 13, 0.877);
+  transition: all 0.5s;
+}
+
+.clients {
+  background-color: white;
+  width: 100%;
+  height: 24rem;
+  display: flex;
+  flex-direction: row;
+}
+.clients .swiper {
+  margin: auto 15rem;
+}
+.clients .swiper .slide {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.clients .swiper .slide img {
+  width: 17rem;
+  zoom: 1.1;
+}
+
 .footer {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;
