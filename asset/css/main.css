@@ -557,6 +557,155 @@ h1 {
   font-size: 12px;
 }
 
+.services {
+  background-color: rgb(238, 238, 238);
+  padding: 2rem 2rem 5rem 2rem;
+}
+.services h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 3rem auto;
+}
+.services .box-container {
+  display: grid;
+}
+@media screen and (min-width: 1568px) {
+  .services .box-container {
+    grid-template-columns: auto auto auto auto;
+    gap: 1.3rem;
+    margin: auto 15rem;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1567px) {
+  .services .box-container {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 36rem 36rem;
+    gap: 1.3rem;
+    margin: auto 15rem;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .services .box-container {
+    margin: auto 1rem;
+    gap: 1.3rem;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 36rem 36rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 999px) {
+  .services .box-container {
+    gap: 1.3rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: 36rem 36rem 36rem;
+  }
+}
+@media screen and (min-width: 880px) and (max-width: 991px) {
+  .services .box-container {
+    gap: 1.3rem;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 36rem 36rem;
+  }
+}
+@media screen and (min-width: 594px) and (max-width: 879px) {
+  .services .box-container {
+    gap: 1.3rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: 36rem 36rem 36rem;
+  }
+}
+@media screen and (max-width: 593px) {
+  .services .box-container {
+    gap: 1.3rem;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, 36rem);
+  }
+}
+.services .box-container .card {
+  background-color: white;
+  text-align: center;
+  border: 2px solid rgba(14, 13, 13, 0.877);
+  padding: 2rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.services .box-container .card:hover {
+  background-color: rgb(16, 34, 27);
+}
+.services .box-container .card:hover :not(h3) {
+  filter: invert(1);
+}
+.services .box-container .card:hover a:hover {
+  background-color: rgba(14, 13, 13, 0.877);
+}
+.services .box-container .card img {
+  width: 30%;
+}
+.services .box-container .card h3 {
+  color: rgb(42, 128, 16);
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+.services .box-container .card p {
+  font-size: medium;
+  line-height: 3.5rem;
+  margin: 1rem auto;
+}
+
+.blogs {
+  width: 100%;
+  height: 72.2rem;
+}
+.blogs h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 4rem auto 2.5rem auto;
+}
+.blogs .swiper {
+  width: 83vw;
+  height: 60rem;
+  cursor: grab;
+}
+.blogs .swiper:active {
+  cursor: grabbing;
+}
+.blogs .swiper .swiper-wrapper {
+  padding: 1rem;
+}
+.blogs .swiper .swiper-wrapper .slide {
+  text-align: center;
+  padding: 2rem;
+}
+.blogs .swiper .swiper-wrapper .slide .icons {
+  background: #10221b;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  top: -2rem;
+  display: inline-block;
+}
+.blogs .swiper .swiper-wrapper .slide .icons a {
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+.blogs .swiper .swiper-wrapper .slide .icons a:hover {
+  color: #219150;
+}
+.blogs .swiper .swiper-wrapper .slide .icons a i {
+  padding-right: 0.5rem;
+  color: #219150;
+}
+.blogs .swiper .swiper-wrapper .slide h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+.blogs .swiper .swiper-wrapper .slide p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  line-height: 2;
+  color: #10221b;
+}
+
 .footer {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;
