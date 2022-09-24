@@ -1,0 +1,57 @@
+.blogs {
+    width: 100%;
+    height: 72.2rem;
+  
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+      margin: 4rem auto 2.5rem auto;
+    }
+    .swiper {
+      width: 83vw;
+      height: 60rem;
+      cursor: grab;
+      &:active {
+        cursor: grabbing;
+      }
+      .swiper-wrapper {
+        padding: 1rem;
+        .slide {
+          text-align: center;
+          padding: 2rem;
+          
+          .icons {
+            background: #10221b;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            position: relative;
+            top: -2rem;
+            display: inline-block;
+            a {
+              font-size: 1.4rem;
+              color: #fff;
+              margin: 0 1rem;
+              &:hover {
+                color: #219150;
+              }
+              i {
+                padding-right: 0.5rem;
+                color: #219150;
+              }
+            }
+          }
+          h3 {
+            font-size: 2rem;
+            color: #10221b;
+          }
+          p {
+            font-size: 1.4rem;
+            padding: 1rem 0;
+            line-height: 2;
+            color: #10221b;
+          }
+        }
+      }
+    }
+  }
+  
