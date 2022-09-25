@@ -2,12 +2,6 @@ $review-font-size: 1.5rem;
 $review-h3-font-size: 2rem;
 $review-span-font-size: 1.5rem;
 
-@mixin reviewDisplay($display) {
-  $display: -webkit-box;
-  $display: -ms-flexbox;
-  $display: flex;
-}
-
 .reviews {
   .slide {
     .text {
@@ -39,10 +33,15 @@ $review-span-font-size: 1.5rem;
 .reviews {
   .slide {
     .user {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       gap: 1rem;
 
-      &img {
+      & img {
         height: 7rem;
         width: 7rem;
         border-radius: 50%;
