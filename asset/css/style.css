@@ -43,7 +43,8 @@ img {
   height: auto;
 }
 
-input, textarea {
+input,
+textarea {
   border: none;
   outline: none;
 }
@@ -80,7 +81,8 @@ header {
 }
 header.active {
   background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 header .container {
   display: flex;
@@ -415,7 +417,7 @@ section {
 }
 @media (max-width: 992px) {
   .swiper-button-next::after,
-.swiper-button-prev::after {
+  .swiper-button-prev::after {
     display: none;
   }
 }
@@ -599,8 +601,16 @@ h1 {
 }
 
 .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.5)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url(../images/footer-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/footer-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

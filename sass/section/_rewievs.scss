@@ -39,13 +39,10 @@ $review-span-font-size: 1.5rem;
 .reviews {
   .slide {
     .user {
-      @include reviewDisplay(display);
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
       gap: 1rem;
 
-      & img {
+      &img {
         height: 7rem;
         width: 7rem;
         border-radius: 50%;
