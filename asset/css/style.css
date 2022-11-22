@@ -582,15 +582,10 @@ h1 {
 }
 
 .reviews .slide .user {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   gap: 1rem;
 }
-.reviews .slide .user img {
+.reviews .slide .userimg {
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
@@ -658,4 +653,4 @@ h1 {
   color: #219150;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */

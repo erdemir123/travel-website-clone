@@ -1,0 +1,59 @@
+$review-font-size: 1.5rem;
+$review-h3-font-size: 2rem;
+$review-span-font-size: 1.5rem;
+
+.reviews {
+  .slide {
+    .text {
+      padding: 2rem;
+      $review-font-size: 1.5rem;
+      font-style: italic;
+      background: #eee;
+      border-radius: 0.5rem;
+      color: #10221b;
+      line-height: 2;
+      position: relative;
+      z-index: 0;
+      margin-bottom: 3rem;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1.5rem;
+        left: 0.7rem;
+        height: 3rem;
+        width: 3rem;
+        background: #eee;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+.reviews {
+  .slide {
+    .user {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 1rem;
+
+      & img {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+      }
+      & h3 {
+        $review-h3-font-size: 2rem;
+        color: #10221b;
+      }
+      & span {
+        color: #219150;
+        $review-span-font-size: 1.5rem;
+      }
+    }
+  }
+}
