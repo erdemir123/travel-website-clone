@@ -12,8 +12,8 @@ header {
   }
   .container {
     @include flex(space-between, center, row, no-wrap);
-    height: 7rem;
-    font-size: 2rem;
+   
+    
     .fa-hiking {
       color: $green;
     }
@@ -55,7 +55,7 @@ header {
           @include md {
             display: block;
             position: absolute;
-            top: 4rem;
+            top: 0;
             right: 2rem;
             font-size: 3rem;
             &:hover {
@@ -78,11 +78,10 @@ header {
   }
 }
 .search {
-  clip-path: inset(0 0 100% 0);
   transition: 0.6s;
   &.active {
     clip-path: inset(0 0 0 0);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
@@ -90,7 +89,7 @@ header {
     background-color: $black;
     @include flex(center, center, row, no-wrap);
     gap: 2rem;
-    z-index: 123456789;
+    
     input {
       width: 60%;
       height: 4rem;
@@ -99,13 +98,13 @@ header {
       color: $white;
       font-size: 2rem;
     }
-   .container{
-    @include flex(space-between,center,row,no-wrap);
-    height: 7rem;
-    font-size: 2rem;
-    .fa-hiking{
-        color: $green;
-    }
+  //  .container{
+  //   @include flex(space-between,center,row,no-wrap);
+  //   height: 7rem;
+  //   font-size: 2rem;
+  //   .fa-hiking{
+  //       color: $green;
+  //   }}
     #search-close {
       position: absolute;
       color: $white;
@@ -113,6 +112,7 @@ header {
       top: 5rem;
       right: 10rem;
       transition: 0.8s;
+      z-index: 100;
       &:hover {
         color: $green;
       }
@@ -165,7 +165,7 @@ header {
                 }
             }
         }
-    }
+    
    }
    .icons{
     @include flex(center,center,row,no-wrap);
@@ -177,44 +177,5 @@ header {
         }
     }
    }
-}
-.search{
-    clip-path: inset(0 0 100% 0);
-    transition: .6s;
-    &.active{
-        clip-path: inset(0 0 0 0);
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: $black;
-        @include flex(center,center,row,no-wrap);
-        gap:2rem;
-        z-index: 123456789;
-        input{
-            width: 60%;
-            height: 4rem;
-            background-color: rgba(32, 32, 32, 0.158);
-            border-bottom: 3px solid $white;
-            color: $white;
-            font-size: 2rem;
-        }
-        .fa-search{
-            font-size: 3rem;
-            color: $white;
-        }
-        #search-close{
-            position: absolute;
-            color: $white;
-            font-size: 4rem;
-            top: 5rem;
-            right: 10rem;
-            transition: .8s;
-            &:hover{
-                color: $green;
-            }
-        }
-    }
 }
 }
